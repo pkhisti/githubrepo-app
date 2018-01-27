@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  text-align: left;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.image-min-height {
+  min-height: 70px;
+  max-height: 70px;
+  text-align: left;
+  margin: 5px;
+}
+
+.div-min-height {
+  text-align: left;
+}
+
+.header-min-height {
+  min-height: 80px;
+  max-height: 80px;
+  text-align: left;
+}
+
+.title-subheader {
+  font-size:11px;
+  color: gray;
+}
+
+.search-box {
+  width: 100%
+}
+
+.hidden { display:none; }
+
+.sort-header {
+  text-align: left;
+  padding: 0;
+}
+
+.sort-box {
+  text-align: right;
+  padding: 0;
+}
+
+.sortby-row {
+  display: flex;
+  align-items: center;
+}
