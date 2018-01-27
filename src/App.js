@@ -69,6 +69,7 @@ class App extends Component {
         return (
            <div>
               <RepoSortBy count={this.state.allRepoList.length} org={this.state.orgName} sortClick={this.handleSortClick}/>
+              <br/>
               <RepoList repos={this.state.allRepoList} orgName={this.state.orgName} handleDetails={this.handleDetails}/>
            </div>
         )
@@ -85,8 +86,8 @@ class App extends Component {
             </Navbar>
         </header>
         <div className="container">
-         <div className="row sortby-row">
-            <div className="col-sm-12 sort-header">
+         <div className="row">
+            <div className="col-sm-12">
               <RepoSearch onSearch={this.handleSearch} />
             </div>
           </div>

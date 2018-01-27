@@ -13,11 +13,13 @@ class RepoSortBy extends React.Component {
 
     render() {
         return(
-             <div className="row sortby-row">
-                   <div className="col-sm-4 sort-header">
-                       <h2>{this.props.org} repositories: <span >{this.props.count}</span></h2>
+             <div className="row">
+                   <div className="col-sm-6 ">
+                       <h3 className="pull-left">{this.props.org} repositories: {this.props.count}</h3>
                       </div>
-                      <div className="col-sm-8 sort-box">
+                      <div className="col-sm-6 sortby-padding">
+                      <br/>
+                      <div className="pull-right ">
                        <DropdownButton
                             bsStyle="default"
                             title="Sort By....."
@@ -26,7 +28,10 @@ class RepoSortBy extends React.Component {
                             <MenuItem onSelect={e => this.handleSortClick(e)} eventKey="forks">Popularity</MenuItem>
                             <MenuItem onSelect={e => this.handleSortClick(e)} eventKey="open_issues">Open Issues</MenuItem>
                         </DropdownButton>
+
+                        </div>
                       </div>
+
                 </div>
         )
     }

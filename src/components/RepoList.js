@@ -37,8 +37,8 @@ class RepoList extends React.Component {
             return (
                 <div className="col-sm-12 div-min-height list-group-item" key={repo.id}>
                     <div className="row">
-                      <div className="col-sm-2">
-                        <img src={src} alt={repo.name} className="img-thumbnail image-min-height"/>
+                      <div className="col-sm-1">
+                        <img src={src} alt={repo.name} className="img-responsive image-min-height"/>
                       </div>
                       <div className="col-sm-8">
                         <div className="header-min-height"><h3>{repo.name}</h3></div>
@@ -46,8 +46,8 @@ class RepoList extends React.Component {
                         <div className="title-subheader">Forks: {repo.forks}</div>
                         <div className="title-subheader">Open Issues: {repo.open_issues}</div>
                       </div>
-                     <div className="col-sm-2">
-                        <Button bsStyle="link" className="btn btn-xs"  onClick={e => this.handleShow(e, repo.name)}>
+                     <div className="col-sm-3">
+                        <Button bsStyle="link" className="btn pull-right"  onClick={e => this.handleShow(e, repo.name)}>
                           <span className="glyphicon glyphicon-th-list"></span>&nbsp;Recent Commits
                         </Button>
                     </div>

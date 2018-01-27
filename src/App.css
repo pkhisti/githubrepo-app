@@ -21,6 +21,7 @@
 
 .image-min-height {
    margin: 0 auto;
+   max-height: 100px;
 }
 
 .div-min-height {
@@ -33,35 +34,12 @@
 }
 
 .title-subheader {
-  font-size:11px;
   color: gray;
 }
-
-.search-box {
-  width: 400px;
-}
-
 .hidden { display:none; }
 
-.sort-header {
-  text-align: left;
-  padding: 0;
-}
 
-.sort-box {
-  text-align: right;
-  padding: 0;
-
-}
-
-.sortby-row {
-  display: flex;
-  align-items: center;
-}
-
-.header-search {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+sortby-padding {
+  padding:5px;
   background: yellow;
 }

@@ -20,7 +20,8 @@ class RepoSearch extends React.Component {
                 debounceTimeout={700}
                 onChange={event => this.handleChange(event)}
                 placeholder="Search github repositories"
-                onFocus={this.props.toggleSearch} />
+                onFocus={this.props.toggleSearch}
+                id="repoSearch"/>
             </div>
         )
     }
