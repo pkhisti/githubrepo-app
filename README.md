@@ -25,3 +25,5 @@ npm run selenium-start
 For running the automation test cases run following on a different terminal tab
 
 npm run e2e-tests
+
+Please note - the automation can fail because eventually github will start returning 403
