@@ -6,11 +6,6 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
-.App-header {
-  text-align: left;
-}
-
 .App-title {
   font-size: 1.5em;
 }
@@ -25,19 +20,15 @@
 }
 
 .image-min-height {
-  min-height: 70px;
-  max-height: 70px;
-  text-align: left;
-  margin: 5px;
+   margin: 0 auto;
 }
 
 .div-min-height {
   text-align: left;
+
 }
 
 .header-min-height {
-  min-height: 80px;
-  max-height: 80px;
   text-align: left;
 }
 
@@ -47,7 +38,7 @@
 }
 
 .search-box {
-  width: 100%
+  width: 400px;
 }
 
 .hidden { display:none; }
@@ -60,9 +51,17 @@
 .sort-box {
   text-align: right;
   padding: 0;
+
 }
 
 .sortby-row {
   display: flex;
   align-items: center;
+}
+
+.header-search {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: yellow;
 }

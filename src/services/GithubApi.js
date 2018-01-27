@@ -1,6 +1,11 @@
-const api = "https://api.github.com/orgs"
+const api = "https://api.github.com/"
 
 export const getAll = (org) =>
-  fetch(`${api}/${org}/repos`, {})
+  fetch(`${api}orgs/${org}/repos`, {})
+    .then(res => res.json())
+    .then(data => data)
+
+export const getSingle = (repoName, org) =>
+  fetch(`${api}repos/${org}/${repoName}/commits`, {})
     .then(res => res.json())
     .then(data => data)

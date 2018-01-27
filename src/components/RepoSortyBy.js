@@ -10,11 +10,12 @@ class RepoSortBy extends React.Component {
     handleSortClick = (e) =>{
         this.props.sortClick(e);
     }
+
     render() {
         return(
              <div className="row sortby-row">
                    <div className="col-sm-4 sort-header">
-                       <h2>{this.props.org} Repositories: <span className="badge">{this.props.count}</span></h2>
+                       <h2>{this.props.org} repositories: <span >{this.props.count}</span></h2>
                       </div>
                       <div className="col-sm-8 sort-box">
                        <DropdownButton
