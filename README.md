@@ -26,4 +26,4 @@ For running the automation test cases run following on a different terminal tab
 
 npm run e2e-tests
 
-Please note - the automation can fail because eventually github will start returning 403
+Please note - the automation can fail if hourly limit of 60 api calls is reached for unauthenticated users.
