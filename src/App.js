@@ -14,8 +14,8 @@ class App extends Component {
       allRepoList: [],
       orgName: "netflix"
     }
-   this.handleSortClick = this.handleSortClick.bind(this);
-  this.handleSearch = this.handleSearch.bind(this);
+    this.handleSortClick = this.handleSortClick.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
   }
 
   componentDidMount() {
@@ -41,14 +41,13 @@ class App extends Component {
   handleSortClick = (sortBy) => {
     console.log(sortBy);
     let sortedRepoList = [];
-    if(sortBy === "name")
-     {
+    if(sortBy === "name") {
       sortedRepoList = this.state.allRepoList.sort((a,b)=>a.name.localeCompare(b.name));
      }
      else {
        sortedRepoList = this.state.allRepoList.sort((a,b)=>b[sortBy]-a[sortBy]);
      }
-    this.setState({allRepoList: sortedRepoList})
+     this.setState({allRepoList: sortedRepoList})
   }
 
   handleDetails = (id) => {

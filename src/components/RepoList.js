@@ -24,8 +24,7 @@ class RepoList extends React.Component {
     }
 
     handleShow(e, repoName) {
-        this.setState(
-            {
+        this.setState({
                 selectedRepo: repoName ,
                 show: true
             });

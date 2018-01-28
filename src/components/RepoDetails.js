@@ -10,9 +10,10 @@ class RepoDetails extends React.Component {
        }
     }
 
-  componentDidMount() {
-   this.fetchData();
-  }
+    componentDidMount() {
+    this.fetchData();
+    }
+
     fetchData() {
      GithubApi.getSingle(this.props.repoName,this.props.orgName).then((data)=>{
          console.log(data);
@@ -23,7 +24,6 @@ class RepoDetails extends React.Component {
     }
 
     render() {
-
      const commitList = this.state.commits.map((commit)=>{
            let commitDate = new Date(commit.commit.author.date);
             return (
@@ -31,7 +31,6 @@ class RepoDetails extends React.Component {
                 <h4>{commitDate.toLocaleDateString('en-US')} : {commit.commit.author.name}</h4>
                 {commit.commit.message}
               </li>
-
             )
         })
         return(
